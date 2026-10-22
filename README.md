@@ -115,7 +115,7 @@ The root URL `/` returns `404 Not Found` unless you add a `GET /` route; use `/d
 ```text
 Streamlit UI -> FastAPI /chat -> LangChain agent -> Groq LLM
                                             |-> Tavily search (optional)
-                      <- Final response <-  |
+                                            |-> Final response
 ```
 
 - **Streamlit:** Collects the model, system prompt, query, and search preference.
